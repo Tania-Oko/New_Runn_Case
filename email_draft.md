@@ -11,7 +11,7 @@ One case has been set up in Runn and the ID added to the Pipeline board in Monda
    Status: Tentative. New project (none existed in Runn).
    Fields NOT yet set (the Runn API did not accept them) - please complete in Runn:
    Budget method (currently ROLE, default is PHASE), Contracting Entity (Fideres USA Inc),
-   Business Line (Antitrust), Probability (20), Billing Category (No LoE - Not Billable Yet).
-   Project Type left blank: the case is already Filed, so no early-stage default applies.
+   Business Line (Antitrust), Probability (20), Billing Category (No LoE - Not Billable Yet),
+   Project Type (US Comp Expert Report, as the US case is already Filed).
 
 Thanks

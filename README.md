@@ -15,7 +15,7 @@ If the case already exists in Runn, link its ID instead of creating a duplicate.
 - Project tag: by Monday country (US = 571874, UK = 567524)
 - Contracting entity: US = Fideres USA Inc; Spain/Portugal = Iberia; UK = Partners LLP; other EU = Fideres Europe; anything else = Fideres Partners LLP
 - Business line: Monday business unit, fuzzy matched (Consumer Fraud = "Consumer" in Runn)
-- Project type: Consumer = US CP Report; EU Antitrust = EU Comp Report; first phase of UK antitrust = UK Comp Pre-filing; early-stage US case (not Financial/Securities) = US Comp Pre-filing
+- Project type: Consumer = US CP Report; EU Antitrust = EU Comp Report; first phase of UK antitrust = UK Comp Pre-filing; early-stage US case (not Financial/Securities) = US Comp Pre-filing; US case already Filed (Monday Stage = Filed, not Financial/Securities) = US Comp Expert Report
 - Probability: 20 (edited later)
 - Billing category: "No LoE - Not Billable Yet" (reviewed later)
 - Name format: `Case | Country | Business unit | Year | Lead initials | No LoE`
