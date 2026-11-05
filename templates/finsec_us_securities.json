@@ -1,0 +1,118 @@
+{
+  "name": "FinSec US Securities Class Action (from Runn test project 2398415)",
+  "note": "Day offsets are from the project start date, which is the Monday of the week the project is set up. Placeholder person ids are Runn placeholders (reusable across projects). Runn API cannot set budget method, custom fields or project managers; set those by hand.",
+  "source_runn_project_id": 2398415,
+  "project": {
+    "teamId": 109049,
+    "rateCardId": 196335,
+    "pricingModel": "tm",
+    "isConfirmed": false,
+    "budgetMethod": "PHASE"
+  },
+  "phases": [
+    {
+      "name": "Motion - Plaintiff",
+      "color": "#84DBA0",
+      "startOffsetDays": 0,
+      "endOffsetDays": 23,
+      "budget": null
+    },
+    {
+      "name": "Reply Plaintiff",
+      "color": "#FDCD4F",
+      "startOffsetDays": 126,
+      "endOffsetDays": 158,
+      "budget": null
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Reply plaintiff",
+      "icon": "end",
+      "dateOffsetDays": 158,
+      "note": ""
+    },
+    {
+      "title": "Motion - Plaintiff",
+      "icon": "end",
+      "dateOffsetDays": 23,
+      "note": ""
+    },
+    {
+      "title": "Opposition - Defendant",
+      "icon": "start",
+      "dateOffsetDays": 126,
+      "note": ""
+    }
+  ],
+  "assignments": [
+    {
+      "phase": "Motion - Plaintiff",
+      "placeholderPersonId": 3377241,
+      "roleId": 376029,
+      "minutesPerDay": 180,
+      "startOffsetDays": 0,
+      "endOffsetDays": 23,
+      "isBillable": true
+    },
+    {
+      "phase": "Reply Plaintiff",
+      "placeholderPersonId": 3377242,
+      "roleId": 376027,
+      "minutesPerDay": 180,
+      "startOffsetDays": 126,
+      "endOffsetDays": 158,
+      "isBillable": true
+    },
+    {
+      "phase": "Reply Plaintiff",
+      "placeholderPersonId": 3377240,
+      "roleId": 376025,
+      "minutesPerDay": 360,
+      "startOffsetDays": 126,
+      "endOffsetDays": 158,
+      "isBillable": true
+    },
+    {
+      "phase": "Motion - Plaintiff",
+      "placeholderPersonId": 3377240,
+      "roleId": 376025,
+      "minutesPerDay": 180,
+      "startOffsetDays": 0,
+      "endOffsetDays": 23,
+      "isBillable": true
+    },
+    {
+      "phase": "Reply Plaintiff",
+      "placeholderPersonId": 3377241,
+      "roleId": 376029,
+      "minutesPerDay": 180,
+      "startOffsetDays": 126,
+      "endOffsetDays": 158,
+      "isBillable": true
+    },
+    {
+      "phase": "Motion - Plaintiff",
+      "placeholderPersonId": 3377242,
+      "roleId": 376027,
+      "minutesPerDay": 180,
+      "startOffsetDays": 0,
+      "endOffsetDays": 23,
+      "isBillable": true
+    }
+  ],
+  "roles": {
+    "376025": "Associate",
+    "376029": "Senior Associate",
+    "376027": "Director"
+  },
+  "source_custom_fields_for_reference": {
+    "Expert Attribution (FinSec Only)": "No Attribution",
+    "Business Line": "Securities",
+    "Project Type": "US Securities Class Action",
+    "Probability": "50",
+    "Billing Category": "Billable",
+    "Contracting Entity": "Fideres USA Inc",
+    "Invoicing": "0"
+  }
+}
