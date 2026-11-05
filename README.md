@@ -22,3 +22,18 @@ If the case already exists in Runn, link its ID instead of creating a duplicate.
 - After set-up, for Antitrust, Consumer Fraud, Discrimination or Environmental cases, email Chris Pike and Tania Oko (Outlook) with the Runn fields.
 
 Runn API notes: send a custom User-Agent (default Python UA gets 403). Custom fields are applied by PATCH /projects/{id}; the Billing Category field does not accept a change via the API and must be set manually.
+
+## FinSec Pipeline board (Financial and Securities business lines)
+
+Financial and Securities cases are NOT triggered from the main Pipeline board. Use the FinSec Pipeline board (https://fideres-team.monday.com/boards/2691948641/, board id 2691948641) instead. Items on the main Pipeline board with Business unit Financial or Securities are ignored.
+
+Trigger: FinSec Pipeline item with Runn Instruction (color_mm8ty94b) = "Set up case in Runn" and an empty Runn ID (text_mkygq8yb). Once the ID is on the board, set Runn Instruction to "Done". If the case already exists in Runn, link it and do not edit it. The general rules above apply (tentative, PHASE, probability 20, billing category, apply defaults to new projects only), with these FinSec differences:
+
+- Primary team: FinSec (109049)
+- Business line: Securities, or Financial when Type = Financial or Securities&Financial (precedent: Dangdang)
+- Project type, from the board's Type column: US Sec Class = US Securities Class Action; US Sec Opt-Out = US Securities Opt-Out; Non-US Sec Group = Non-US Securities Group Action; SEC Case = SEC Case; Financial = Financial; Securities&Financial = Securities&Financial. Other Types (Software, Product, SDM, Others, Canada Sec, Valuation, blank): leave blank and flag in the notification.
+- Country: board column Country (country_mm8qmdeh). Rate card, tag and contracting entity follow the country rules above.
+- Name format: `Case | Country code | Securities or Financial | Year | PM initials | No LoE`, with PM taken from the PM column (e.g. `Manhattan Associates | US | Securities | 2026 | CH | No LoE`).
+- Client: from the board's Client dropdown; match an existing Runn client, create one only if none exists.
+- Notify the BUH column people (Per Axelson / Robert Chang) and Tania Oko with the Runn fields instead of Chris Pike.
+- Setup done checklist: also tick "Added to Runn" (dropdown_mm8qdb8d) once the ID is on the board. The board's Setup status column belongs to the separate setup-new-finsec-case skill, so do not change it.
