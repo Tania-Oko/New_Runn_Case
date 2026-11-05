@@ -1,0 +1,256 @@
+{
+  "name": "FinSec US Securities 4-phase starter (from Runn test project 2398424, $600k)",
+  "note": "Day offsets are from the template Start milestone (23 Nov 2026 in the source). Phases: Cert., Cert Reply, Merits Opening, Merits Reply. Placeholder ids are from the source; apply script creates new placeholders per project (Runn placeholders belong to one project). When the Monday board has dates for only some phases, add only those phases. No historic time: skip assignments dated before the Monday of the current week. Runn API cannot set budget method, custom fields or project managers.",
+  "source_runn_project_id": 2398424,
+  "project": {
+    "teamId": 109049,
+    "rateCardId": 196335,
+    "pricingModel": "tm",
+    "isConfirmed": false,
+    "budgetMethod": "PHASE"
+  },
+  "phases": [
+    {
+      "name": "Cert.",
+      "color": "#FDCD4F",
+      "startOffsetDays": 39,
+      "endOffsetDays": 95,
+      "budget": 100000
+    },
+    {
+      "name": "Cert Reply",
+      "color": "#F191CC",
+      "startOffsetDays": 154,
+      "endOffsetDays": 256,
+      "budget": 200000
+    },
+    {
+      "name": "Merits Opening",
+      "color": "#B19DE6",
+      "startOffsetDays": 343,
+      "endOffsetDays": 431,
+      "budget": 200000
+    },
+    {
+      "name": "Merits Reply",
+      "color": "#9CE277",
+      "startOffsetDays": 497,
+      "endOffsetDays": 550,
+      "budget": 100000
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Start",
+      "icon": "start",
+      "dateOffsetDays": 0,
+      "note": ""
+    },
+    {
+      "title": "Internal Deadline",
+      "icon": "flag",
+      "dateOffsetDays": 39,
+      "note": ""
+    },
+    {
+      "title": "Cert. Motion",
+      "icon": "end",
+      "dateOffsetDays": 95,
+      "note": "court date"
+    },
+    {
+      "title": "Cert. Opposition",
+      "icon": "start",
+      "dateOffsetDays": 154,
+      "note": ""
+    },
+    {
+      "title": "Internal deadline",
+      "icon": "flag",
+      "dateOffsetDays": 219,
+      "note": ""
+    },
+    {
+      "title": "Cert Reply",
+      "icon": "end",
+      "dateOffsetDays": 256,
+      "note": "The date is in the weekend tbc"
+    },
+    {
+      "title": "Cert. Reply",
+      "icon": "end",
+      "dateOffsetDays": 257,
+      "note": ""
+    },
+    {
+      "title": "Merits Due",
+      "icon": "dollar",
+      "dateOffsetDays": 431,
+      "note": ""
+    },
+    {
+      "title": "Merit Reply Due",
+      "icon": "dollar",
+      "dateOffsetDays": 553,
+      "note": ""
+    },
+    {
+      "title": "Est End",
+      "icon": "end",
+      "dateOffsetDays": 588,
+      "note": ""
+    }
+  ],
+  "assignments": [
+    {
+      "phase": "Cert.",
+      "placeholderPersonId": 3378715,
+      "roleId": 376025,
+      "minutesPerDay": 105,
+      "startOffsetDays": 42,
+      "endOffsetDays": 95,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert Reply",
+      "placeholderPersonId": 3378715,
+      "roleId": 376025,
+      "minutesPerDay": 105,
+      "startOffsetDays": 154,
+      "endOffsetDays": 256,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert.",
+      "placeholderPersonId": 3378714,
+      "roleId": 389619,
+      "minutesPerDay": 4,
+      "startOffsetDays": 42,
+      "endOffsetDays": 95,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert.",
+      "placeholderPersonId": 3378713,
+      "roleId": 376029,
+      "minutesPerDay": 105,
+      "startOffsetDays": 42,
+      "endOffsetDays": 95,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert Reply",
+      "placeholderPersonId": 3378714,
+      "roleId": 389619,
+      "minutesPerDay": 4,
+      "startOffsetDays": 154,
+      "endOffsetDays": 256,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert Reply",
+      "placeholderPersonId": 3378713,
+      "roleId": 376029,
+      "minutesPerDay": 105,
+      "startOffsetDays": 154,
+      "endOffsetDays": 256,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert.",
+      "placeholderPersonId": 3378716,
+      "roleId": 376027,
+      "minutesPerDay": 42,
+      "startOffsetDays": 42,
+      "endOffsetDays": 95,
+      "isBillable": true
+    },
+    {
+      "phase": "Cert Reply",
+      "placeholderPersonId": 3378716,
+      "roleId": 376027,
+      "minutesPerDay": 42,
+      "startOffsetDays": 154,
+      "endOffsetDays": 256,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Opening",
+      "placeholderPersonId": 3378715,
+      "roleId": 376025,
+      "minutesPerDay": 105,
+      "startOffsetDays": 343,
+      "endOffsetDays": 431,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Opening",
+      "placeholderPersonId": 3378716,
+      "roleId": 376027,
+      "minutesPerDay": 63,
+      "startOffsetDays": 343,
+      "endOffsetDays": 431,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Opening",
+      "placeholderPersonId": 3378714,
+      "roleId": 389619,
+      "minutesPerDay": 21,
+      "startOffsetDays": 343,
+      "endOffsetDays": 431,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Opening",
+      "placeholderPersonId": 3378713,
+      "roleId": 376029,
+      "minutesPerDay": 105,
+      "startOffsetDays": 343,
+      "endOffsetDays": 431,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Reply",
+      "placeholderPersonId": 3378715,
+      "roleId": 376025,
+      "minutesPerDay": 105,
+      "startOffsetDays": 497,
+      "endOffsetDays": 550,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Reply",
+      "placeholderPersonId": 3378716,
+      "roleId": 376027,
+      "minutesPerDay": 42,
+      "startOffsetDays": 497,
+      "endOffsetDays": 550,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Reply",
+      "placeholderPersonId": 3378714,
+      "roleId": 389619,
+      "minutesPerDay": 4,
+      "startOffsetDays": 497,
+      "endOffsetDays": 550,
+      "isBillable": true
+    },
+    {
+      "phase": "Merits Reply",
+      "placeholderPersonId": 3378713,
+      "roleId": 376029,
+      "minutesPerDay": 105,
+      "startOffsetDays": 497,
+      "endOffsetDays": 550,
+      "isBillable": true
+    }
+  ],
+  "roles": {
+    "376025": "Associate",
+    "376029": "Senior Associate",
+    "376027": "Director",
+    "389619": "Executive Director"
+  }
+}

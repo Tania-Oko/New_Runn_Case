@@ -27,7 +27,7 @@ call("PATCH", f"/projects/{pid}", {"tags": [{"id": tag}]})
 phase_ids = {}
 for ph in tpl["phases"]:
     r = call("POST", f"/projects/{pid}/phases", {"name": ph["name"], "color": ph["color"],
-             "startDate": day(ph["startOffsetDays"]), "endDate": day(ph["endOffsetDays"])})
+             "startDate": day(ph["startOffsetDays"]), "endDate": day(ph["endOffsetDays"]), **({"budget": ph["budget"]} if ph.get("budget") else {})})
     phase_ids[ph["name"]] = r["id"]
 for m in tpl["milestones"]:
     call("POST", f"/projects/{pid}/milestones", {"title": m["title"], "icon": m["icon"], "date": day(m["dateOffsetDays"]), "note": m.get("note") or ""})
