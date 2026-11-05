@@ -19,7 +19,7 @@ If the case already exists in Runn, link its ID instead of creating a duplicate.
 - Probability: 20 (edited later)
 - Billing category: "No LoE - Not Billable Yet" (reviewed later)
 - Name format: `Case | Country | Business unit | Year | Lead initials | No LoE`
-- After set-up, for Antitrust, Consumer Fraud, Discrimination or Environmental cases, email Chris Pike and Tania Oko (Outlook) with the Runn fields.
+- After set-up, send the Teams notification described under "Teams notification" below (no email).
 
 Runn API notes: send a custom User-Agent (default Python UA gets 403). Custom fields are applied by PATCH /projects/{id}; the Billing Category field does not accept a change via the API and must be set manually.
 
@@ -35,5 +35,17 @@ Trigger: FinSec Pipeline item with Runn Instruction (color_mm8ty94b) = "Set up c
 - Country: board column Country (country_mm8qmdeh). Rate card, tag and contracting entity follow the country rules above.
 - Name format: `Case | Country code | Securities or Financial | Year | PM initials | No LoE`, with PM taken from the PM column (e.g. `Manhattan Associates | US | Securities | 2026 | CH | No LoE`).
 - Client: from the board's Client dropdown; match an existing Runn client, create one only if none exists.
-- Notify the BUH column people (Per Axelson / Robert Chang) and Tania Oko with the Runn fields instead of Chris Pike.
+- Notification goes to the RUNN Finsec chat (chat id 19:171290e9ddfe47e4b0f759504d60249c@thread.v2; members Tania Oko, Alyse Corcoran, Connor Hurley), not the Pipeline-board chat. No test message has been sent there yet.
 - Setup done checklist: also tick "Added to Runn" (dropdown_mm8qdb8d) once the ID is on the board. The board's Setup status column belongs to the separate setup-new-finsec-case skill, so do not change it.
+
+## Teams notification (replaces the email)
+
+Send one Teams message per run (one section per project set up or linked in that run), as HTML via the Teams chat tool. It is sent without a test or confirmation step. Skip it if no project was set up or linked.
+
+- Pipeline board (Antitrust, Consumer Fraud, Discrimination, Environmental, etc.): chat "Chris, Max, Paul, +2", chat id 19:cae01a63d2134538bcd74463de9a6018@thread.v2 (Chris Pike, Max Theiler, Paul Vella, Russell De Souza, Tania Oko).
+- FinSec Pipeline board: RUNN Finsec chat (see above).
+- Before posting, check the chat's member list still matches. If it does not, do not post; report it instead.
+- Message layout: short intro on the first message only if asked; then a heading "N new Runn projects to review (Pipeline board)" and "Current state in Runn as of <date>". For each project: numbered bold title linked to https://app.runn.io/projects/<Runn ID> with "(Runn ID ...)", a line saying whether it was created (with client) or already existed and was linked, then bullets: "Now set: ..." and "To check: ..." (read the CURRENT values back from Runn, do not report what was originally created, as people edit projects afterwards). For a new project with unset fields use "Action needed, still to complete in Runn:" with a nested bullet per field and its suggested value.
+- Fields the API cannot set (budget method, Contracting Entity, Business Line, Probability, Billing Category, Project Type) are listed for manual completion unless Runn already shows them set. Always check project managers and budget.
+- End with: "This is an automated message from the Runn case set-up routine (Claude), sent on behalf of Tania Oko."
+- Do not send test messages to the group chats. Use the notes-to-self chat id 48:notes for tests.
