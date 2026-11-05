@@ -1,7 +1,9 @@
 # New_Runn_Case
 Creates project in Runn based on trigger in Monday Pipeline Board and returns the Runn project ID to the Monday board. Notifies the BUHs, GB and Oko that the new project has been set up in Runn to review.
 
-## Runn project field rules (from Tania Oko, 5 Nov 2026)
+## Runn project field defaults for initial set-up (from Tania Oko, 5 Nov 2026)
+
+These are starting defaults only. They are reviewed and edited manually in Runn afterwards, so never overwrite fields on an existing Runn project.
 
 Trigger: Monday Pipeline board item with Runn Instruction = "Set up case in Runn" and an empty Runn ID.
 If the case already exists in Runn, link its ID instead of creating a duplicate. Once the ID is on the board, set Runn Instruction to "Done".
