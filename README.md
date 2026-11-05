@@ -38,6 +38,12 @@ Trigger: FinSec Pipeline item with Runn Instruction (color_mm8ty94b) = "Set up c
 - Notification goes to the RUNN Finsec chat (chat id 19:171290e9ddfe47e4b0f759504d60249c@thread.v2; members Tania Oko, Alyse Corcoran, Connor Hurley), not the Pipeline-board chat. No test message has been sent there yet.
 - Setup done checklist: also tick "Added to Runn" (dropdown_mm8qdb8d) once the ID is on the board. The board's Setup status column belongs to the separate setup-new-finsec-case skill, so do not change it.
 
+## Existing, archived and missing-country rules (both boards)
+
+- An archived Runn project counts as "already exists". Link its ID; never create a new project and never unarchive or edit it. Match on case name (ignoring year, country and initials in the Runn name) and client.
+- In the Teams message, flag a linked archived project under "To check": say it is archived in Runn and ask the team to confirm it is the same case (same client, country and matter) and not a new, similar one.
+- If the Monday Country is blank, do not guess for a NEW project: skip creating it, leave Runn Instruction as it is, and flag the item in the Teams message ("Country missing on the Monday item, please fill it in and re-trigger"). For a project that already exists in Runn, link it and flag the missing country under "To check".
+
 ## Teams notification (replaces the email)
 
 Send one Teams message per run (one section per project set up or linked in that run), as HTML via the Teams chat tool. It is sent without a test or confirmation step. Skip it if no project was set up or linked.
@@ -46,6 +52,7 @@ Send one Teams message per run (one section per project set up or linked in that
 - FinSec Pipeline board: RUNN Finsec chat (see above).
 - Before posting, check the chat's member list still matches. If it does not, do not post; report it instead.
 - Message layout: short intro on the first message only if asked; then a heading "N new Runn projects to review (Pipeline board)" and "Current state in Runn as of <date>". For each project: numbered bold title linked to https://app.runn.io/projects/<Runn ID> with "(Runn ID ...)", a line saying whether it was created (with client) or already existed and was linked, then bullets: "Now set: ..." and "To check: ..." (read the CURRENT values back from Runn, do not report what was originally created, as people edit projects afterwards). For a new project with unset fields use "Action needed, still to complete in Runn:" with a nested bullet per field and its suggested value.
+- Flags go under "To check" for the project: archived project linked, missing Country, Project Type left blank, PM or initials mismatch.
 - Fields the API cannot set (budget method, Contracting Entity, Business Line, Probability, Billing Category, Project Type) are listed for manual completion unless Runn already shows them set. Always check project managers and budget.
 - End with: "This is an automated message from the Runn case set-up routine (Claude), sent on behalf of Tania Oko."
 - Do not send test messages to the group chats. Use the notes-to-self chat id 48:notes for tests.
