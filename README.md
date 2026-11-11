@@ -22,3 +22,10 @@ If the case already exists in Runn, link its ID instead of creating a duplicate.
 - After set-up, for Antitrust, Consumer Fraud, Discrimination or Environmental cases, email Chris Pike and Tania Oko (Outlook) with the Runn fields.
 
 Runn API notes: send a custom User-Agent (default Python UA gets 403). Custom fields are applied by PATCH /projects/{id}; the Billing Category field does not accept a change via the API and must be set manually.
+
+## Runn API behaviour seen in runs (11 Nov 2026)
+
+- POST /projects ignores `budgetMethod` (projects come back as ROLE) and PATCH /projects/{id} silently ignores `customFields`, so budget method, Contracting Entity, Business Line, Probability, Billing Category and Project Type must be completed manually in Runn.
+- An assignment cannot start on a non-working day (e.g. a US public holiday for that person); start it on the next working day.
+- A milestone dated before the project's first phase or start (e.g. a historic complaint-filed date) was not created; the POST returned no error.
+- EU/Italy precedent in Runn: Italy = rate card "EUR Italy / Spain / Portugal" (196338), tag IT (571876), Fideres Europe Ltd; EU = "EUR All Other Countries" (198456), tag EU (575500).
