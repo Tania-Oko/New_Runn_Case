@@ -22,3 +22,7 @@ If the case already exists in Runn, link its ID instead of creating a duplicate.
 - After set-up, for Antitrust, Consumer Fraud, Discrimination or Environmental cases, email Chris Pike and Tania Oko (Outlook) with the Runn fields.
 
 Runn API notes: send a custom User-Agent (default Python UA gets 403). Custom fields are applied by PATCH /projects/{id}; the Billing Category field does not accept a change via the API and must be set manually.
+
+## Routine alerts to Tania Oko (from Tania Oko, 11 Nov 2026)
+
+Send the routine's own alerts (items skipped or needing attention, errors, the routine being unable to run) to Tania Oko's Teams notes-to-self chat, chat id 48:notes, as a Teams chat message. The Claude push notification is not reliably reaching her. Skip the alert when the run finds nothing to report. This is separate from the team notifications about projects set up or linked, which go to the group chats.
